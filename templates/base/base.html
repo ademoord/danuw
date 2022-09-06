@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="zxx">
+<meta http-equiv="content-type" content="text/html;charset=UTF-8" /><!-- /Added by HTTrack -->
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>{{ title }} - Danuw Bakery & Pastry</title>
+    <!-- ::::::::::::::Favicon icon::::::::::::::-->
+    <link rel="shortcut icon" href="/static/images/dnw-logo-favico.png" type="image/png">
+    <!-- Use the minified version files listed below for better performance and remove the files listed above -->
+    <link rel="stylesheet" href="/static/css/vendor/vendor.min.css">
+    <link rel="stylesheet" href="/static/css/plugins/plugins.min.css">
+    <link rel="stylesheet" href="/static/css/style.min.css">
+</head>
+<body>
+    {% include 'base/header.html' %}
+    {% include 'base/mobheader.html' %}
+    {% include 'base/offcan-mobmenu.html' %}
+    {% include 'base/offcan-mobabout.html' %}
+    {% include 'base/offcan-addcart.html' %}
+    {% include 'base/offcan-wishlist.html' %}
+    {% include 'base/offcan-searchbar.html' %}
+    <!-- Offcanvas Overlay -->
+    <div class="offcanvas-overlay"></div>
+
+    {% block content %}{% endblock %}
+
+    {% include 'base/scripts.html' %}
+</body>
